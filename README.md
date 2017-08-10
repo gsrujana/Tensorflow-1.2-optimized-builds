@@ -2,7 +2,7 @@
 Pip Wheel file built for Tensorflow 1.2 with AVX2, MKL optimizations for CPU computations. Ready to use whl files for Linux with Python 2.7. 
 Invoke pip install to install any of these these pip package. For more details refer to https://www.tensorflow.org/install/install_sources.
 
-======
+
 ## Links to download built whl files and details of folder contents:
 
 ### Tensorflow 1.2 with MKL version 0.9 
@@ -28,7 +28,9 @@ https://drive.google.com/drive/folders/0B1iF-VlYLTeqSFZrMW1UbXZ0TkE?usp=sharing
 Build script:
 bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-mfpmath=both --copt="-Ofast" --copt=-msse4.2 //tensorflow/tools/pip_package:build_pip_package
 Example configuration for MKL+AVX optimization
-======
+
+
+
 srujana@srujana:~/tensorflow$ ./configure
 Please specify the location of python. [Default is /usr/bin/python]: /usr/bin/python2.7
 Found possible Python library paths:
