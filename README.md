@@ -27,9 +27,9 @@ https://drive.google.com/drive/folders/0B1iF-VlYLTeqYVduTE91XzZDNkE?usp=sharing
 https://drive.google.com/drive/folders/0B1iF-VlYLTeqSFZrMW1UbXZ0TkE?usp=sharing
 Build script:
 bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-mfpmath=both --copt="-Ofast" --copt=-msse4.2 //tensorflow/tools/pip_package:build_pip_package
-Example configuration for MKL+AVX optimization
 
 
+## Example configuration details for MKL+AVX optimization
 
 srujana@srujana:~/tensorflow$ ./configure
 Please specify the location of python. [Default is /usr/bin/python]: /usr/bin/python2.7
